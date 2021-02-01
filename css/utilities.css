@@ -1,0 +1,16 @@
+.link-arrow {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow:after {
+  content: "-->";
+  margin-left: 5px;
+  transition: 0.4s margin ease;
+}
+
+.link-arrow:hover::after {
+  margin-left: 1rem;
+}
