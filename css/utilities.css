@@ -1,3 +1,4 @@
+/* Link */
 .link-arrow {
   color: var(--accent-color);
   text-transform: uppercase;
@@ -34,6 +35,7 @@
   margin-bottom: 1rem;
 }
 
+/* Icon */
 .icon {
   width: 40px;
   height: 40px;
@@ -51,4 +53,84 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 50px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: opacity, transform 0.3s ease-in;
+  margin: 1rem 0;
+}
+
+.btn:focus,
+.btn:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+.btn--block {
+  width: 100%;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--heading-color);
+  border: 2px solid var(--heading-color);
+  transition: 0.3s background, color ease-in;
+}
+.btn--outline:focus,
+.btn--outline:hover {
+  background: var(--heading-color);
+  color: #fff;
+}
+.btn--primary {
+  background: var(--primary-color);
+}
+
+.btn--secondary {
+  background: var(--secondary-color);
+}
+
+.btn--accent {
+  background: var(--accent-color);
+}
+
+/* Inputs */
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  color: var(--heading-color);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.input-group {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group .input {
+  border: 0;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px 0;
 }

@@ -6,6 +6,8 @@
   --accent-color: #ff3400;
   --heading-color: #1b0760;
   --body-color: #918ca4;
+  --border-color: #ccc;
+  --border-radius: 30px;
 }
 
 /* Typography */
@@ -13,7 +15,9 @@ html {
   font-size: 10px;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -105,5 +109,13 @@ a {
 
   .list--tick .list__item {
     padding-left: 0;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 1.5rem;
   }
 }
