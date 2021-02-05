@@ -122,19 +122,24 @@ img {
 
 /* Cards */
 .card {
-  /*horizontal vertical blur spread color */
   align-items: center;
   border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
+  /*horizontal vertical blur spread color */
+  box-shadow: 0 0 20px 1px #f3f3f3;
   /* height: 50vh; */
   overflow: hidden;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 2rem auto;
 }
 
 .card__header,
 .card__body {
   padding: 2rem 3rem;
+}
+
+.card__body {
+  background: #fff;
+  /* white-space: nowrap; */
 }
 
 .card--primary .card__header {
@@ -310,10 +315,15 @@ img {
 
 .collapsible__chevron {
   transform: rotate(-90deg);
+  transition: transform 0.4s ease-in;
+  cursor: pointer;
 }
 
 .collapsible .collapsible__content {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  opacity: 0;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -321,7 +331,35 @@ img {
 }
 
 .collapsible--expanded .collapsible__content {
-  display: block;
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Blocks */
+.block {
+  padding: 6rem 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block--dark {
+  background: #000;
+  color: #7c858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+.block--skewed-left {
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 /* ######## */
 /* MEDIA QUERIES */
@@ -331,7 +369,7 @@ img {
   /* Grid */
   .grid--col-2 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 4rem;
     align-items: center;
   }
 
@@ -430,6 +468,6 @@ img {
 
   .grid--col-3 {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 6rem;
   }
 }
