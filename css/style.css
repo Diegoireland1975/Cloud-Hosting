@@ -111,6 +111,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .input-group .input {
@@ -122,6 +123,7 @@ img {
 
 .input-group .btn {
   margin: 4px 0;
+  padding: 2rem 2rem;
 }
 
 /* Cards */
@@ -300,9 +302,12 @@ img {
   padding: 3rem 2rem;
   border-radius: 5px;
   text-align: center;
+  width: 90%;
   max-width: 800px;
   margin: 0 auto;
   color: #fff;
+  position: relative;
+  top: 10rem;
 }
 
 .callout--primary {
@@ -473,7 +478,7 @@ img {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 1.5rem;
   font-weight: 600;
@@ -483,7 +488,6 @@ img {
 /* Plans Block */
 .block-plans {
   padding: 0 3rem;
-  gap: 8rem 0rem;
 }
 
 .block-plans .card {
@@ -521,6 +525,7 @@ img {
 /* FOOTER */
 .main__footer {
   background: #232323;
+  padding-top: 15rem;
 }
 
 .footer__section {
@@ -668,10 +673,13 @@ img {
   }
 
   .block-domain__prices {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     font-size: 1.5rem;
   }
-
+  .block-plans {
+    position: relative;
+    bottom: 6rem;
+  }
   .block-plans .plan {
     align-self: flex-start;
   }
@@ -760,6 +768,11 @@ img {
 
   .plan .plan__description {
     font-size: 1.7rem;
+  }
+
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    /* font-size: 1.5rem; */
   }
 
   /* .quote {
