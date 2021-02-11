@@ -76,8 +76,15 @@
   white-space: nowrap;
   transition: opacity, transform 0.3s ease-in;
   margin: 1rem 0;
+  outline: 0;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
 .btn:focus,
 .btn:hover {
   opacity: 0.8;
@@ -114,6 +121,11 @@
   background: var(--accent-color);
 }
 
+.btn--header {
+  background: var(--heading-color);
+  color: #fff;
+}
+
 /* Grid */
 .grid {
   display: grid;
@@ -133,4 +145,105 @@
   /* width: 90%; */
   max-width: 1140px;
   margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Margin and Padding  */
+.my-1 {
+  margin: 1.5rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 2.5rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 3.5rem 0;
+}
+
+.my-6 {
+  margin: 4rem 0;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 2.5rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 3.5rem 0;
+}
+
+.py-6 {
+  padding: 4rem 0;
+}
+
+.m-1 {
+  margin: 1.5rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 2.5rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 3.5rem;
+}
+
+.m-6 {
+  margin: 4rem;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 2.5rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 3.5rem;
+}
+
+.p-6 {
+  padding: 4rem;
 }
