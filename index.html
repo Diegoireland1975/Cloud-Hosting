@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="img/Icon/favicon-sm.png" />
   <link rel="stylesheet" href="css/utilities.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <!-- Navigation -->
@@ -28,17 +29,17 @@
   <!-- Section Hero -->
 <section class="block block--dark block--skewed-left hero">
   <div class="container flex">
-    <div class="hero__content">
+    <div class="hero__content" data-aos="zoom-in">
       <h1 class="block__heading">Cloud Hosting for Pros</h1>
       <p class="my-3">Deploy your website in less than 60 seconds.</p>
       <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
     </div>
-    <img class="hero__image" src="img/banner.png" alt="banner" />
+    <img class="hero__image" src="img/banner.png" alt="banner" data-aos="zoom-in-up" />
   </div>
 </section>
 
 <!-- Section domain -->
-<section class="block container block-domain">
+<section class="block container block-domain" data-aos="fade-up" data-aos-duration="1000">
   <header class="block__header">
     <h2>The best webhosting Starting at 9$ per month</h2>
     <p class="py-3">
@@ -72,7 +73,7 @@
 </section>
 
 <!-- Section Cards -->
-<div class="grid grid--col-2 grid--col-3 container block-plans">
+<div class="grid grid--col-2 grid--col-3 container block-plans" data-aos="fade-up" data-aos-duration="1000">
   <div class="plan">
     <div class="card card--secondary">
       <header class="card__header">
@@ -142,7 +143,9 @@
 </div>
 
 <!-- Section Features -->
-<section class="feature container">
+<section class="feature container" data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
   <header class="block__header my-5">
     <h2>Host on the Cloud to keep growing</h2>
     <p class="my-1">
@@ -150,8 +153,8 @@
     </p>
   </header>
   <!-- 1st Article -->
-  <div class="feature-content grid grid--col-2 my-6">
-    <div>
+  <div class="feature-content grid grid--col-2 my-6" >
+    <div data-aos="fade-right">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="img/icon/sprite.svg#easy"></use>
@@ -165,11 +168,11 @@
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
-    <img src="img/easy.jpg" alt="graphic" />
+    <img src="img/easy.jpg" data-aos="fade-up-left"alt="graphic" />
   </div>
   <!-- 2nd Article -->
   <div class="feature-content grid grid--col-2 my-6">
-    <div>
+    <div data-aos="fade-right">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="img/icon/sprite.svg#computer"></use>
@@ -182,12 +185,12 @@
         aliquam iusto harum suscipit! Architecto illo quo libero labore itaque.
       </p>
       <a href="#" class="link-arrow">Learn More</a>
-    </div>
-    <img src="img/fast.jpg" alt="graphic" />
+    </div data-aos="fade-right">
+    <img src="img/fast.jpg" data-aos="fade-up-left" alt="graphic" />
   </div>
   <!-- 3rd Article -->
   <div class="feature-content grid grid--col-2 my-6">
-    <div>
+    <div data-aos="fade-right">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="img/icon/sprite.svg#settings"></use>
@@ -201,11 +204,11 @@
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
-    <img src="img/wordpress.jpg" alt="graphic" />
+    <img src="img/wordpress.jpg" data-aos="fade-up-left" alt="graphic" />
   </div>
   <!-- 4th Article -->
   <div class="feature-content grid grid--col-2 my-6">
-    <div>
+    <div data-aos="fade-right">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="img/icon/sprite.svg#clock"></use>
@@ -219,7 +222,7 @@
       </p>
       <a href="#" class="link-arrow">Learn More</a>
     </div>
-    <img src="img/support.jpg" alt="graphic of a chart" />
+    <img src="img/support.jpg" data-aos="fade-up-left" alt="graphic of a chart" />
   </div>
 </section>
 
@@ -282,7 +285,8 @@
 
   <!-- Testimonials -->
   <div class="block">
-    <header class="block__header">
+    <header class="block__header" data-aos="fade-up"
+    data-aos-duration="1000">
       <h2>What our Customer are Saying</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque,
@@ -292,7 +296,7 @@
 
     <div class="card testimonial container ">
       <div class="grid grid--col-2">
-        <div class="testimonial__image">
+        <div class="testimonial__image" data-aos="fade-right">
           <img src="img/testimonial.jpg" alt="testimonial photo" />
 
           <span class="icon-container icon-container--accent">
@@ -302,7 +306,7 @@
           </span>
         </div>
 
-        <blockquote class="quote">
+        <blockquote class="quote" data-aos="fade-up-left">
           </p class="quote__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
@@ -330,7 +334,7 @@
   </div>
 
   <!-- Callout -->
-  <div class="callout callout--primary">
+  <div class="callout callout--primary" data-aos="zoom-in">
     <div class="flex">
       <div class="callout__content">
         <h2 class="callout__heading">Ready To Get Started?</h2>
@@ -421,5 +425,9 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

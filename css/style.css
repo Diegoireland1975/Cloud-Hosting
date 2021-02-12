@@ -29,6 +29,7 @@ body {
   color: var(--body-color);
   font-size: 2.4rem;
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -277,13 +278,13 @@ img {
 
 /* Testimonials */
 .testimonial {
-  padding: 2rem 4rem;
+  padding: 1.5rem 0rem;
   margin: 4rem auto;
 }
 
 .testimonial__image {
   position: relative;
-  max-width: 400px;
+  max-width: 250px;
   margin: 0 auto;
 }
 
@@ -583,6 +584,9 @@ img {
     font-size: 2rem;
   }
 
+  .testimonial__image {
+    max-width: 500px;
+  }
   .testimonial .quote__company {
     font-size: 1.6rem;
     margin-top: 0.5rem;
